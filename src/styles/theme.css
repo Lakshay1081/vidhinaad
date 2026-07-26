@@ -1,0 +1,16 @@
+:root {
+  /* Brand Colors */
+  --primary: #0F172A;      /* Deep Navy */
+  --primary-light: #1E293B;
+
+  --accent: #B08D57;       /* Premium Gold */
+  --accent-dark: #8C6A39;
+
+  --background: #F8F6F2;   /* Warm Ivory */
+  --surface: #FFFFFF;
+
+  --heading: #111827;
+  --body: #4B5563;
+
+  --border: #E5E7EB;
+}
