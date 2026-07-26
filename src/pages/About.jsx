@@ -1,8 +1,18 @@
+import AboutHero from "../components/about/AboutHero";
+import MissionVision from "../components/about/MissionVision";
+import CoreValues from "../components/about/CoreValues";
+import WhyVidhinaad from "../components/about/WhyVidhinaad";
+import ConsultationCTA from "../components/sections/ConsultationCTA";
+
 function About() {
   return (
-    <section className="flex min-h-screen items-center justify-center">
-      <h1 className="text-5xl font-bold">About Page</h1>
-    </section>
+    <>
+      <AboutHero />
+      <MissionVision />
+      <CoreValues />
+      <WhyVidhinaad />
+      <ConsultationCTA />
+    </>
   );
 }
 

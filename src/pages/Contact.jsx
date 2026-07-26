@@ -1,9 +1,13 @@
-function Contact() {
+import ContactHero from "../components/contact/ContactHero";
+import ContactForm from "../components/contact/ContactForm";
+import ConsultationCTA from "../components/sections/ConsultationCTA";
+
+export default function Contact() {
   return (
-    <section className="flex min-h-screen items-center justify-center">
-      <h1 className="text-5xl font-bold">Contact Page</h1>
-    </section>
+    <>
+      <ContactHero />
+      <ContactForm />
+      <ConsultationCTA />
+    </>
   );
 }
-
-export default Contact;
