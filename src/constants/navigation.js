@@ -13,7 +13,7 @@ export const NAVIGATION = [
   },
   {
     name: "Founding Partners",
-    path: "/partners",
+    path: "/#founding-partners",
   },
   {
     name: "Contact",

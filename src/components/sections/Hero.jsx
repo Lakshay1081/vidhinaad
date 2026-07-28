@@ -77,7 +77,7 @@ function Hero() {
             initial={{ opacity: 0, x: 40, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="flex justify-center lg:justify-end"
+            className="hidden md:flex justify-center lg:justify-end"
           >
             <img
               src={logo}

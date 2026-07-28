@@ -13,8 +13,8 @@ import {
 
 import Container from "../layout/Container";
 
-import devanshi from "../../assets/images/devanshi.png";
-import mudrika from "../../assets/images/mudrika.png";
+import devanshi from "../../assets/images/devanshi.webp";
+import mudrika from "../../assets/images/mudrika.webp";
 
 const partners = [
   {
@@ -90,7 +90,10 @@ const partners = [
 
 function FoundingPartners() {
   return (
-    <section className="bg-[#F8F6F2] py-24">
+    <section
+  id="founding-partners"
+  className="bg-[#F8F6F2] py-24"
+>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 25 }}

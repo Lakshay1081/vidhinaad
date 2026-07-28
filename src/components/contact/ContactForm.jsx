@@ -55,8 +55,8 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="bg-white py-20">
-      <div className="mx-auto max-w-4xl px-6">
+    <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
 
         {/* Section Heading */}
         <motion.div
@@ -64,19 +64,19 @@ export default function ContactForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-14 text-center"
+          className="mb-10 md:mb-14 text-center"
         >
           <p className="mb-3 uppercase tracking-[0.3em] text-[#B08D57]">
             Request Consultation
           </p>
 
-          <h2 className="font-serif text-4xl font-bold text-[#0F172A] md:text-5xl">
+          <h2 className="font-serif text-3xl font-bold leading-tight text-[#0F172A] sm:text-4xl md:text-5xl">
             Let's Discuss Your Legal Needs
           </h2>
 
           <div className="mx-auto mt-5 h-1 w-20 rounded-full bg-[#B08D57]" />
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
             Fill out the form below and our legal team will get back to you as
             soon as possible. We're committed to providing practical,
             strategic, and client-focused legal solutions.
@@ -90,9 +90,9 @@ export default function ContactForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="rounded-3xl border border-gray-200 bg-[#F8F6F2] p-8 shadow-lg md:p-10"
+          className="rounded-2xl border border-gray-200 bg-[#F8F6F2] p-5 sm:p-6 md:rounded-3xl md:p-10 shadow-lg"
         >
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-4 sm:gap-5 md:gap-6 md:grid-cols-2">
 
             <input
               type="text"
@@ -101,7 +101,7 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="rounded-xl border border-gray-300 bg-white px-5 py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
+              className="rounded-xl border border-gray-300 bg-white px-4 py-3.5 sm:px-5 sm:py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
             />
 
             <input
@@ -111,7 +111,7 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="rounded-xl border border-gray-300 bg-white px-5 py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
+              className="rounded-xl border border-gray-300 bg-white px-4 py-3.5 sm:px-5 sm:py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
             />
 
             <input
@@ -121,7 +121,7 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="rounded-xl border border-gray-300 bg-white px-5 py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
+              className="rounded-xl border border-gray-300 bg-white px-4 py-3.5 sm:px-5 sm:py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
             />
 
             <input
@@ -131,19 +131,19 @@ export default function ContactForm() {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="rounded-xl border border-gray-300 bg-white px-5 py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
+              className="rounded-xl border border-gray-300 bg-white px-4 py-3.5 sm:px-5 sm:py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
             />
 
           </div>
 
           <textarea
-            rows={6}
+            rows={5}
             name="message"
             placeholder="Tell us about your legal matter..."
             value={formData.message}
             onChange={handleChange}
             required
-            className="mt-6 w-full resize-none rounded-xl border border-gray-300 bg-white px-5 py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
+            className="mt-5 w-full resize-none rounded-xl border border-gray-300 bg-white px-4 py-3.5 sm:px-5 sm:py-4 outline-none transition focus:border-[#B08D57] focus:ring-2 focus:ring-[#B08D57]/20"
           />
 
           {success && (
@@ -162,7 +162,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={loading}
-              className="rounded-xl bg-[#B08D57] px-10 py-4 font-medium text-white transition-all duration-300 hover:bg-[#9B7A48] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-70"
+              className="w-full rounded-xl bg-[#B08D57] px-6 py-3.5 text-sm font-medium text-white transition-all duration-300 hover:bg-[#9B7A48] hover:shadow-lg sm:w-auto sm:px-10 sm:py-4 sm:text-base disabled:cursor-not-allowed disabled:opacity-70"
             >
               {loading ? "Sending..." : "Request Consultation"}
             </button>
