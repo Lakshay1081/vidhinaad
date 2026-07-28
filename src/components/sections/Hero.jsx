@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Container from "../layout/Container";
 import logo from "../../assets/images/logo.png";
-import { heroContent } from "../../data/siteContent";
+import { heroContent } from "../../data/SiteContent";
 
 function Hero() {
   return (
