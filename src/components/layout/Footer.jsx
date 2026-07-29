@@ -5,16 +5,18 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/logo.png";
+
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-[#08111F] text-white">
       <div className="mx-auto max-w-7xl px-6 py-20">
-
+        
         <div className="grid gap-14 lg:grid-cols-4">
 
           {/* Company */}
@@ -27,14 +29,11 @@ function Footer() {
 
             <p className="mt-6 leading-8 text-gray-400">
               Strategic legal solutions backed by integrity, expertise,
-              and a client-first approach for businesses,
-              startups and individuals.
+              and a client-first approach for businesses, startups,
+              and individuals.
             </p>
 
-            <div className="mt-8 flex gap-4">
-
-
-            </div>
+            <div className="mt-8 flex gap-4"></div>
           </div>
 
           {/* Quick Links */}
@@ -45,18 +44,38 @@ function Footer() {
             </h3>
 
             <div className="mt-6 flex flex-col gap-4">
+              <Link
+                to="/"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+              >
+                Home
+              </Link>
 
-              <Link to="/">Home</Link>
+              <Link
+                to="/about"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+              >
+                About
+              </Link>
 
-              <Link to="/about">About</Link>
+              <Link
+                to="/services"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+              >
+                Services
+              </Link>
 
-              <Link to="/services">Services</Link>
-
-              <Link to="/founding-partners">
+              <Link
+                to="/founding-partners"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+              >
                 Founding Partners
               </Link>
 
-              <Link to="/contact">
+              <Link
+                to="/contact"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+              >
                 Contact
               </Link>
 
@@ -96,8 +115,9 @@ function Footer() {
 
             <div className="mt-6 space-y-5">
 
+              {/* Address */}
               <div className="flex items-start gap-3">
-
+                
                 <MapPin
                   size={18}
                   className="mt-1 text-[#D4AF37]"
@@ -109,6 +129,7 @@ function Footer() {
 
               </div>
 
+              {/* Phone */}
               <div className="flex items-start gap-3">
 
                 <Phone
@@ -116,12 +137,15 @@ function Footer() {
                   className="mt-1 text-[#D4AF37]"
                 />
 
-                <p className="text-gray-400">
+                <a
+                  href="tel:+91XXXXXXXXXX"
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                >
                   +91 XXXXX XXXXX
-                </p>
-
+                </a>
               </div>
 
+              {/* Email */}
               <div className="flex items-start gap-3">
 
                 <Mail
@@ -129,17 +153,35 @@ function Footer() {
                   className="mt-1 text-[#D4AF37]"
                 />
 
-                <p className="text-gray-400">
-                  contact@vidhinaad.com
-                </p>
-
+                <a
+                  href="Info@vidhinaad.com"
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                >
+                  Info@vidhinaad.com
+                </a>
               </div>
 
+              {/* LinkedIn */}
+              <div className="flex items-start gap-3">
+                <FaLinkedin
+                  size={18}
+                  className="mt-1 text-[#D4AF37]"
+                />
+
+                <a
+                  href="https://www.linkedin.com/company/vidhinaad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                >
+                  Follow us on LinkedIn
+                </a>
+              </div>
             </div>
 
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#B08D57] px-5 py-3 transition hover:bg-[#9B7A48]"
+              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#B08D57] px-5 py-3 font-medium transition hover:bg-[#9B7A48]"
             >
               Book Consultation
 
@@ -151,6 +193,7 @@ function Footer() {
 
         </div>
 
+        {/* Bottom Footer */}
         <div className="mt-16 border-t border-white/10 pt-8">
 
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
@@ -163,14 +206,14 @@ function Footer() {
 
               <Link
                 to="/privacy-policy"
-                className="text-gray-400 hover:text-[#D4AF37]"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
               >
                 Privacy Policy
               </Link>
 
               <Link
                 to="/disclaimer"
-                className="text-gray-400 hover:text-[#D4AF37]"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors"
               >
                 Disclaimer
               </Link>
