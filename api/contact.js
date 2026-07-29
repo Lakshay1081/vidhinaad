@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 
     // Send email
     const { data, error } = await resend.emails.send({
-      from: "VIDHINAAD <onboarding@resend.dev>",
+      from: "VIDHINAAD <info@vidhinaad.com>",
       to: process.env.RECEIVER_EMAIL,
       replyTo: formData.email,
       subject: `New Consultation Request • ${formData.subject}`,
