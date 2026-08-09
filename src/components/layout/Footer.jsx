@@ -115,20 +115,6 @@ function Footer() {
 
             <div className="mt-6 space-y-5">
 
-              {/* Address */}
-              <div className="flex items-start gap-3">
-                
-                <MapPin
-                  size={18}
-                  className="mt-1 text-[#D4AF37]"
-                />
-
-                <p className="text-gray-400">
-                  Jaipur, Rajasthan
-                </p>
-
-              </div>
-
               {/* Phone */}
               <div className="flex items-start gap-3">
 
@@ -138,10 +124,24 @@ function Footer() {
                 />
 
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+917737655078"
                   className="text-gray-400 hover:text-[#D4AF37] transition-colors"
                 >
-                  +91 XXXXX XXXXX
+                  +91 77376 55078
+                </a>
+              </div>
+
+              <div className="flex items-start gap-3">
+
+                <Phone
+                  size={18}
+                  className="mt-1 text-[#D4AF37]"
+                />
+                <a
+                  href="tel:+918824813680"
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                >
+                  +91 88248 13680
                 </a>
               </div>
 
@@ -154,7 +154,7 @@ function Footer() {
                 />
 
                 <a
-                  href="Info@vidhinaad.com"
+                  href="mailto:Info@vidhinaad.com"
                   className="text-gray-400 hover:text-[#D4AF37] transition-colors"
                 >
                   Info@vidhinaad.com
