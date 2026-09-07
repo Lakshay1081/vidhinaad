@@ -145,6 +145,20 @@ function Footer() {
                 </a>
               </div>
 
+              <div className="flex items-start gap-3">
+
+                <Phone
+                  size={18}
+                  className="mt-1 text-[#D4AF37]"
+                />
+                <a
+                  href="tel:+918871767551"
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors"
+                >
+                  +91 8871767551
+                </a>
+              </div>
+
               {/* Email */}
               <div className="flex items-start gap-3">
 
