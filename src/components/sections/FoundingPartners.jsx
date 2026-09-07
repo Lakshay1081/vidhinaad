@@ -15,7 +15,7 @@ import Container from "../layout/Container";
 
 import devanshi from "../../assets/images/devanshi.webp";
 import mudrika from "../../assets/images/mudrika.webp";
-import mudit from "../../assets/images/mudit.jpeg";
+import mudit from "../../assets/images/Mudit.jpeg";
 
 const partners = [
   {
