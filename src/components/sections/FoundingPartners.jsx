@@ -49,7 +49,7 @@ const partners = [
 
   {
     name: "Mudit Hudilwal",
-    role: "Founder & Managing Partner",
+    role: "Co-Founding Partner",
     image: mudit,
     expertise: [
       { icon: Briefcase, text: "Corporate & Commercial Advisory" },
